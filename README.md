@@ -1,5 +1,6 @@
 # 🔐 Love of my life
 
+[![pub package](https://img.shields.io/pub/v/love_of_my_life.svg?color=success&style=flat-square)](https://pub.dartlang.org/packages/love_of_my_life)
 [![license](https://img.shields.io/badge/license-MIT-success.svg?style=flat-square)](https://github.com/Mastersam07/love_of_my_life/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-success.svg?style=flat-square)](https://github.com/Mastersam07/love_of_my_life/pulls)
 ![GitHub contributors](https://img.shields.io/github/contributors/mastersam07/love_of_my_life?color=success&style=flat-square)

@@ -1,12 +1,13 @@
-import 'package:love_of_my_life/src/enums.dart';
+import 'package:love_of_my_life/love_of_my_life.dart';
 
-import 'relationship.dart';
-
-abstract class MainChick extends Relationship {
-  MainChick(LoveLanguage mainLoveLanguage, RelationshipPhase initialPhase)
-      : super(
-          mainLoveLanguage,
-          initialPhase,
+class MainChick extends Partner {
+  MainChick({
+    PartnerQuality mainQuality = PartnerQuality.both,
+    required LoveLanguage mainLoveLanguage,
+    required RelationshipPhase initialPhase,
+  }) : super(
+          mainQuality: mainQuality,
+          mainLoveLanguage: mainLoveLanguage,
         );
 
   @override
@@ -32,5 +33,13 @@ abstract class MainChick extends Relationship {
   @override
   void touchPhysically(double degree, double intensity) {
     // TODO: implement touchPhysically
+  }
+
+  @override
+  String toString() {
+    return 'MainChick{'
+        '   $mainQuality'
+        '   $mainLoveLanguage'
+        '}';
   }
 }

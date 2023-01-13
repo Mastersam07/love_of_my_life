@@ -6,6 +6,12 @@ enum LoveLanguage {
   wordsOfAffirmation,
 }
 
+enum PartnerQuality {
+  physicalAssets,
+  money,
+  both,
+}
+
 enum RelationshipPhase {
   talkingStage,
   friends,
@@ -13,4 +19,23 @@ enum RelationshipPhase {
   seeFinish,
   deepInLove,
   eDonCast,
+}
+
+enum BreakfastType {
+  hot,
+  cold,
+}
+
+enum BreakfastStatus {
+  cooking,
+  served,
+  accepted,
+  rejected,
+}
+
+enum BreakfastServiceMethod {
+  call,
+  text,
+  inPerson,
+  slying,
 }

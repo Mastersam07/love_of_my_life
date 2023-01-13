@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:love_of_my_life/src/src.dart';
-
-import 'breakfast.dart';
-import 'enums.dart';
+import 'package:love_of_my_life/love_of_my_life.dart';
 
 class Relationship {
   final Partner mainPartner1;

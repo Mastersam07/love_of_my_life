@@ -1,7 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:love_of_my_life/src/breakfast.dart';
-
-import '../love_of_my_life.dart';
+import 'package:love_of_my_life/love_of_my_life.dart';
 
 abstract class Partner {
   final LoveLanguage mainLoveLanguage;

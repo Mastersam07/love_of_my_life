@@ -1,6 +1,4 @@
-import 'package:love_of_my_life/src/enums.dart';
-
-import '../love_of_my_life.dart';
+import 'package:love_of_my_life/love_of_my_life.dart';
 
 class SideChick extends Partner {
   SideChick({

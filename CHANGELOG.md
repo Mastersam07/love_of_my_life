@@ -1,3 +1,5 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Add relationship
+* Add main chick
+* Add side chick

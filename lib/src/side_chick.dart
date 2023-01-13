@@ -1,8 +1,9 @@
 import 'package:love_of_my_life/src/enums.dart';
 
+import '../love_of_my_life.dart';
 import 'relationship.dart';
 
-abstract class SideChick extends Relationship {
+abstract class SideChick extends Partner {
   SideChick(RelationshipPhase initialPhase)
       : assert(
           initialPhase == RelationshipPhase.friends ||

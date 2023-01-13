@@ -1,8 +1,9 @@
+import 'package:love_of_my_life/love_of_my_life.dart';
 import 'package:love_of_my_life/src/enums.dart';
 
 import 'relationship.dart';
 
-abstract class MainChick extends Relationship {
+abstract class MainChick extends Partner {
   MainChick(LoveLanguage mainLoveLanguage, RelationshipPhase initialPhase)
       : super(
           mainLoveLanguage,

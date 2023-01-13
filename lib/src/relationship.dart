@@ -42,7 +42,7 @@ class Relationship {
     Duration amountOfTime,
     bool isOutdoors,
   ) {
-    //todo implement spendQualityTime
+    //TODO: implement spendQualityTime
   }
 
   @mustCallSuper

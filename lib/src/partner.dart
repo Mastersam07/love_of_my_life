@@ -5,9 +5,13 @@ import '../love_of_my_life.dart';
 
 abstract class Partner {
   final LoveLanguage mainLoveLanguage;
+  final PartnerQuality mainQuality;
 
-  Partner(this.mainLoveLanguage, RelationshipPhase initialPhase)
-      : _phase = initialPhase;
+  Partner({
+    required this.mainQuality,
+    required this.mainLoveLanguage,
+    required RelationshipPhase initialPhase,
+  }) : _phase = initialPhase;
 
   Breakfast? _breakfast;
 

@@ -1,16 +1,21 @@
 import 'package:love_of_my_life/src/enums.dart';
 
 import '../love_of_my_life.dart';
-import 'relationship.dart';
 
-abstract class SideChick extends Partner {
-  SideChick(RelationshipPhase initialPhase)
-      : assert(
+class SideChick extends Partner {
+  SideChick({
+    PartnerQuality mainQuality = PartnerQuality.physicalAssets,
+    required RelationshipPhase initialPhase,
+  })  : assert(
           initialPhase == RelationshipPhase.friends ||
               initialPhase == RelationshipPhase.talkingStage,
           'Cannot start a side chick from $initialPhase',
         ),
-        super(LoveLanguage.gifting, initialPhase);
+        super(
+          mainQuality: mainQuality,
+          mainLoveLanguage: LoveLanguage.gifting,
+          initialPhase: initialPhase,
+        );
 
   @override
   void giveOrReceiveGifts(double costOfGift, double thoughtfulness) {

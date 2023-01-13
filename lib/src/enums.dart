@@ -6,6 +6,12 @@ enum LoveLanguage {
   wordsOfAffirmation,
 }
 
+enum PartnerQuality {
+  physicalAssets,
+  money,
+  both,
+}
+
 enum RelationshipPhase {
   talkingStage,
   friends,

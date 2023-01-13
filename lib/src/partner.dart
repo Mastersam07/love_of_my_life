@@ -10,8 +10,7 @@ abstract class Partner {
   Partner({
     required this.mainQuality,
     required this.mainLoveLanguage,
-    required RelationshipPhase initialPhase,
-  }) : _phase = initialPhase;
+  });
 
   Breakfast? _breakfast;
 
@@ -23,13 +22,9 @@ abstract class Partner {
 
   double _relationshipMeter = 0;
 
-  RelationshipPhase _phase;
-
   bool get eDonCast => breakfast != null;
 
   double get relationshipMeter => _relationshipMeter;
-
-  RelationshipPhase get currentPhase => _phase;
 
   void spendQualityTime(
     Duration amountOfTime,
@@ -45,11 +40,6 @@ abstract class Partner {
   void performActsOfService();
 
   @mustCallSuper
-  void grow(RelationshipPhase phase) {
-    _phase = phase;
-  }
-
-  @mustCallSuper
   void chopBreakfast(Breakfast breakfast) {
     breakfast = breakfast.copyWith(
       status: BreakfastStatus.accepted,
@@ -62,6 +52,7 @@ abstract class Partner {
       breakfast != null,
       'you can\'t server a null breakfast nauu 😏abi you dey fear nhii',
     );
+    breakfast = breakfast!.copyWith(status: BreakfastStatus.served);
     return breakfast!;
   }
 }

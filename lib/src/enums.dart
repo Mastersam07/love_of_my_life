@@ -27,6 +27,7 @@ enum BreakfastType {
 }
 
 enum BreakfastStatus {
+  cooking,
   served,
   accepted,
   rejected,

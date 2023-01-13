@@ -8,7 +8,6 @@ class MainChick extends Partner {
   }) : super(
           mainQuality: mainQuality,
           mainLoveLanguage: mainLoveLanguage,
-          initialPhase: initialPhase,
         );
 
   @override
@@ -34,5 +33,13 @@ class MainChick extends Partner {
   @override
   void touchPhysically(double degree, double intensity) {
     // TODO: implement touchPhysically
+  }
+
+  @override
+  String toString() {
+    return 'MainChick{'
+        '   $mainQuality'
+        '   $mainLoveLanguage'
+        '}';
   }
 }

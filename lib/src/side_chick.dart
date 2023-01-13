@@ -14,7 +14,6 @@ class SideChick extends Partner {
         super(
           mainQuality: mainQuality,
           mainLoveLanguage: LoveLanguage.gifting,
-          initialPhase: initialPhase,
         );
 
   @override

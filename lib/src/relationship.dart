@@ -5,7 +5,6 @@ import 'breakfast.dart';
 import 'enums.dart';
 
 class Relationship {
-  final LoveLanguage mainLoveLanguage;
   final Partner mainPartner1;
   final Partner mainPartner2;
   final List<Partner> sidePartners;
@@ -13,7 +12,6 @@ class Relationship {
   Relationship({
     required this.mainPartner1,
     required this.mainPartner2,
-    required this.mainLoveLanguage,
     required RelationshipPhase initialPhase,
     this.sidePartners = const <Partner>[],
   })  : _phase = initialPhase,
@@ -62,14 +60,12 @@ class Relationship {
 
   Relationship copyWith({
     final RelationshipPhase? currentPhase,
-    final LoveLanguage? mainLoveLanguage,
     final Partner? mainPartner1,
     final Partner? mainPartner2,
     final List<Partner>? sidePartners,
   }) {
     return Relationship(
       initialPhase: currentPhase ?? this.currentPhase,
-      mainLoveLanguage: mainLoveLanguage ?? this.mainLoveLanguage,
       mainPartner1: mainPartner1 ?? this.mainPartner1,
       mainPartner2: mainPartner2 ?? this.mainPartner2,
       sidePartners: sidePartners ?? this.sidePartners,

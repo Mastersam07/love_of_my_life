@@ -17,7 +17,7 @@ flutter pub add love_of_my_life
 
 ```yaml
 dependencies:
-  love_of_my_life: "^0.3.0"
+  love_of_my_life: "^0.0.1"
 ```
 
 ### ⚡️ Import
